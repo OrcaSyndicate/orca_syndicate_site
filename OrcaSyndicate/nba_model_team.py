@@ -45,7 +45,7 @@ st.write('')
 st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_intro_2.PNG?raw=true')
 st.header('NBA Model Testing',divider="gray",help="Games Used to Determine Betting Thresholds")
 st.subheader('Team-Level Model Spread Performance Summary')
-st.image('site_images/nba_team_spreads_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_team_spreads_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Team-Level Model Spread Datapoints')
 
