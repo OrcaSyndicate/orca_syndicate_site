@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 st.markdown("###### _*Note that players must have played in at least 4 games this season (started, for QBs) in order to qualify for the tables. For pass catchers, their QB must have started at least 4 games as well._")
 
 st.header('QB Projections',divider="gray")
-data_comb1 = pd.read_csv('https://www.dropbox.com/scl/fi/s059a0nzlk4wre3r4kdqo/qb_site_display.csv?rlkey=9hhp34jfzhzy6alzgu2eewadm&st=4gourw9w&dl=0')
+data_comb1 = pd.read_csv('https://www.dropbox.com/scl/fi/s059a0nzlk4wre3r4kdqo/qb_site_display.csv?rlkey=9hhp34jfzhzy6alzgu2eewadm&st=4gourw9w&dl=1', on_bad_lines='skip')
 data_comb1 = data_comb1.dropna(subset=['Player'])
 data_comb1 = data_comb1.rename(columns={'Pred. Completions':'Cmp. Proj.'})
 columns_to_format_as_decimal = ['Pass Yd. Proj.','PA Proj.','Cmp. Proj.','Final TD Proj.','Final INT Proj.',]
