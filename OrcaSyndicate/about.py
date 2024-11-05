@@ -1,5 +1,7 @@
 import streamlit as st
 from st_paywall import add_auth
+from pathlib import Path
+
 
 st.set_page_config(layout="wide")
 st.title('Welcome to the Orca Syndicate!')
@@ -36,8 +38,10 @@ st.write('')
 #st.write(intro2)
 st.write('')
 
-st.image('site_images/home_page3.png')
-st.write('')
+home_page3 = Path("site_images") / "home_page3.png"
+st.image(str(home_page3))
+#st.image('site_images/home_page3.png')
+#st.write('')
 
 #st.write(intro3)
 # st.markdown("#### The Orca Syndicate was created to combine advanced data analysis with scientific wagering principles to create successful sports betting systems. Since the legalization of sports betting in the United States in 2018, we have devoted a significant amount of time and effort into building advanced AI models that are capable of generating sustainable edges for betting purposes.")
