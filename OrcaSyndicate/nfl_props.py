@@ -11,7 +11,7 @@ Targeting these variables has the dual advantage of being relatively stable betw
 
 ''' 
 st.write(nfl_intro)  
-st.image('site_images/nfl_intro1.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_intro1.PNG?raw=true')
 st.write('')
 nfl_intro2 = '''
 Our model utilizes an [elastic net](https://en.wikipedia.org/wiki/Elastic_net_regularization) with 31 features to generate each projection.
@@ -19,7 +19,7 @@ Both player and season variables are included, as well as game specific data suc
 Out of sample testing suggests it is even more accurate than book lines, which is very difficult to achieve across a full 500+ game sample (model comparision and summary statistics for the final passing yards model performance shown below). 
 '''
 st.write(nfl_intro2)
-st.image('site_images/nfl_intro3.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_intro3.PNG?raw=true')
 st.write('')
 
 nfl_intro3 = '''
@@ -29,7 +29,7 @@ The methods to convert the projections into probabilities vary by market, as the
 For example, compare receptions data below, and also note the subtle differences between projecting for a wide receiver versus a running back.
 '''
 st.write(nfl_intro3)  
-st.image('site_images/nfl_intro2.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_intro2.PNG?raw=true')
 st.write('')
 nfl_intro4 = '''
 In total, 6 different distributions are used, and several of the models utilize an average of several different systems to arrive at a final probability.
