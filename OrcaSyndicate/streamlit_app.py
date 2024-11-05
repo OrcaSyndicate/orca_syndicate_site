@@ -37,7 +37,7 @@ def custom_add_auth(**kwargs):
 #st.header('Scientific Sports Betting')
 # st.set_page_config(layout="wide")
 
-st.logo("C:/Users/ajaku/Downloads/logo1_clear.png")
+st.logo("site_images/logo1_clear.png")
 # Sidebar content
 # st.sidebar.image("C:/Users/ajaku/Downloads/logo.png", alt="Logo")
 
