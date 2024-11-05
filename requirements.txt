@@ -5,3 +5,4 @@ pandas==2.2.3
 Plost==0.2.5
 st_paywall==0.1.8
 streamlit==1.36.0
+openpyxl>=3.0.14
