@@ -303,4 +303,4 @@ st.dataframe(df_rec_yd.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide
 #st.write('')
 #st.write('')
 #st.write('')
-#st.image('C:/Users/ajaku/Downloads/nfl_placeholder.png')
+#st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_placeholder.png?raw=true')
