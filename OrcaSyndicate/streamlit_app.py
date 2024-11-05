@@ -86,7 +86,6 @@ div.stButton > button:first-child {
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 0.25rem 0.75rem;
     margin: 0px;
     line-height: 1.6;
     width: auto;
