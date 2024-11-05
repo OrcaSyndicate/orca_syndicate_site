@@ -16,7 +16,7 @@ st.write(tennis_intro)
 # tennis_image1 = ('C:/Users/ajaku/Downloads/tennis_intro1.png')
 # tennis_image2 = ('C:/Users/ajaku/Downloads/tennis_intro2.png')
 # tennis_image3 =('C:/Users/ajaku/Downloads/tennis_intro3.png')
-st.image('site_images/tennis_intro_charts.jpg')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/tennis_intro_charts.JPG?raw=true')
 st.write('')
 tennis_intro2 = '''
 While the player service point win probabilities are robust, we have had some issues in past versions with converting those into final match outcome projections given the scoring peculiarities here. For example - if a player’s service point win percentage is projected at 68% by the algorithm, should we use that for all simulations given the high level of path dependency? Or should it be allowed to vary around the mean? And if so, in what distribution? And should the parameters be surface and/or player specific? Furthermore, past versions were also only able to generate the final win probabilities for a given match, meaning we were limited to testing in the moneyline markets.
