@@ -38,10 +38,11 @@ st.write('')
 #st.write(intro2)
 st.write('')
 
-home_page3 = Path("site_images") / "home_page3.png"
+ROOT_DIR = Path(".")  # Assuming your app is in the root directory
+
+# Now construct the path to your image
+home_page3 = ROOT_DIR / Path("site_images") / "home_page3.png"
 st.image(str(home_page3))
-#st.image('site_images/home_page3.png')
-#st.write('')
 
 #st.write(intro3)
 # st.markdown("#### The Orca Syndicate was created to combine advanced data analysis with scientific wagering principles to create successful sports betting systems. Since the legalization of sports betting in the United States in 2018, we have devoted a significant amount of time and effort into building advanced AI models that are capable of generating sustainable edges for betting purposes.")
