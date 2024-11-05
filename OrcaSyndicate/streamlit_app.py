@@ -2,7 +2,6 @@ import streamlit as st
 from st_paywall import add_auth
 
 
-
 def custom_add_auth(**kwargs):
     result = add_auth(**kwargs)
     
