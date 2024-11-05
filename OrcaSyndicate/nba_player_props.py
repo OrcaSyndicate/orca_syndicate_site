@@ -26,12 +26,12 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 st.write('')
 
-st.image('site_images/nba_intro_3.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_intro_3.PNG?raw=true')
 st.write('')
 st.header('NBA Player Prop Market Models',divider="gray")
 st.markdown("## _Points_")
 st.subheader('Model Test Performance Summary',)
-st.image('site_images/nba_prop_pts_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_pts_summary.PNG?raw=true')
 st.write('')
 
 @st.cache_data  # 👈 Add the caching decorator
@@ -41,7 +41,7 @@ def load_data(url,sheet_name):
 
 st.subheader("All Test Datapoints")
 st.write("")
-data_pts = load_data('site_documents/nba_data_website.xlsx', sheet_name=0)
+data_pts = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=0)
 data_pts['Date'] = pd.to_datetime(data_pts['Date']).dt.strftime('%m-%d-%Y')
 columns_to_format_as_decimal = ['Over Odds','Under Odds','KC Unit Bet Size','KC Unit Profit','KC Unit Result']
 for column in columns_to_format_as_decimal:
@@ -60,12 +60,12 @@ st.dataframe(data_pts,hide_index=True)
 "---"
 st.markdown("## _Rebounds_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_reb_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_reb_summary.PNG?raw=true')
 st.write('')
 st.subheader("All Test Datapoints")
 st.write("")
 
-data_reb = load_data('site_documents/nba_data_website.xlsx', sheet_name=1)
+data_reb = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=1)
 data_reb =data_reb.dropna(subset='Player')
 data_reb['Date'] = pd.to_datetime(data_reb['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -84,10 +84,10 @@ st.write('')
 "---"
 st.markdown("## _Assists_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_ast_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_ast_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_ast = load_data('site_documents/nba_data_website.xlsx', sheet_name=2)
+data_ast = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=2)
 data_ast =data_ast.dropna(subset='Player')
 data_ast['Date'] = pd.to_datetime(data_ast['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. ast.','BB Odds']
@@ -106,10 +106,10 @@ st.write('')
 "---"
 st.markdown("## _3PM_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_3PM_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_3PM_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_3PM = load_data('site_documents/nba_data_website.xlsx', sheet_name=3)
+data_3PM = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=3)
 data_3PM =data_3PM.dropna(subset='Player')
 data_3PM['Date'] = pd.to_datetime(data_3PM['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -128,10 +128,10 @@ st.write('')
 "---"
 st.markdown("## _Steals_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_stl_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_stl_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_stl = load_data('site_documents/nba_data_website.xlsx', sheet_name=4)
+data_stl = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=4)
 data_stl =data_stl.dropna(subset='Player')
 data_stl['Date'] = pd.to_datetime(data_stl['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -150,10 +150,10 @@ st.write('')
 "---"
 st.markdown("## _P+R_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_pr_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_pr_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_pr = load_data('site_documents/nba_data_website.xlsx', sheet_name=7)
+data_pr = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=7)
 data_pr =data_pr.dropna(subset='Player')
 data_pr['Date'] = pd.to_datetime(data_pr['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -172,10 +172,10 @@ st.write('')
 "---"
 st.markdown("## _P+A_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_pa_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_pa_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_pa = load_data('site_documents/nba_data_website.xlsx', sheet_name=8)
+data_pa = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=8)
 data_pa =data_pa.dropna(subset='Player')
 data_pa['Date'] = pd.to_datetime(data_pa['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -194,10 +194,10 @@ st.write('')
 "---"
 st.markdown("## _R+A_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_ra_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_ra_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_ra = load_data('site_documents/nba_data_website.xlsx', sheet_name=9)
+data_ra = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=9)
 data_ra =data_ra.dropna(subset='Player')
 data_ra['Date'] = pd.to_datetime(data_ra['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -216,10 +216,10 @@ st.write('')
 "---"
 st.markdown("## _S+B_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_sb_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_sb_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_sb = load_data('site_documents/nba_data_website.xlsx', sheet_name=5)
+data_sb = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=5)
 data_sb =data_sb.dropna(subset='Player')
 data_sb['Date'] = pd.to_datetime(data_sb['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -238,10 +238,10 @@ st.write('')
 "---"
 st.markdown("## _TO_")
 st.subheader('Model Test Performance Summary')
-st.image('site_images/nba_prop_to_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_to_summary.PNG?raw=true')
 st.write('')
 st.subheader('All Test Datapoints')
-data_to = load_data('site_documents/nba_data_website.xlsx', sheet_name=6)
+data_to = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=6)
 data_to =data_to.dropna(subset='Player')
 data_to['Date'] = pd.to_datetime(data_to['Date']).dt.strftime('%m-%d-%Y')
 # columns_to_format_as_decimal1 = ['Over Odds','Under Odds','Proj. Reb.','BB Odds']
@@ -259,12 +259,6 @@ st.dataframe(data_to,hide_index=True)
 st.write('')
 
 
-
-
-
-# url = 'https://docs.google.com/spreadsheets/d/1-iLpgYDZOjEXi9PvAZfRkivGOHEi-eHB323npm0SkdI/edit?gid=955036045#gid=955036045'
-
-# new_url = convert_google_sheet_url(url)
 
 # df = pd.read_csv(new_url)
 # df['Date'] = pd.to_datetime(df['Date'])
