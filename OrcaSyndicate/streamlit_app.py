@@ -73,7 +73,7 @@ current_page.run()
 st.markdown("""
 <style>
     [alt=Logo] {
-        height: 4.5rem;
+        height: 72px;
     }
 </style>
 """,unsafe_allow_html=True)
