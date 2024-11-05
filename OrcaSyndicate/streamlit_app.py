@@ -5,29 +5,10 @@ from st_paywall import add_auth
 def custom_add_auth(**kwargs):
     result = add_auth(**kwargs)
     	
-    st.markdown("""
-    <style>
-        div.stMarkdownContainer button {
-            background-color: black !important;
-            color: white !important;
-            border: none !important;
-            border-radius: 4px !important;
-            padding: 0.25rem 0.75rem !important;
-            font-size: 1rem !important;
-            line-height: 1.5 !important;
-            text-align: center !important;
-            text-decoration: none !important;
-            display: inline-block !important;
-            cursor: pointer !important;
-            transition: none !important;
-        }
-        div.stMarkdownContainer button:hover,
-        div.stMarkdownContainer button:active {
-            background-color: blue !important;
-            color: white !important;
-        }
-    </style>
-    """, unsafe_allow_html=True)
+    st.markdown(""" div.stButton > button:first-child {
+	background-color: #00cc00;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
+	}
+	“”", unsafe_allow_html=True)
     
     return result
 
