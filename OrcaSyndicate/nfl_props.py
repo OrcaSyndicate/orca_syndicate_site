@@ -59,12 +59,12 @@ columns_to_format_as_decimal3 = ['Over EV','Under EV','Final Over','Final Under'
 st.header('NFL Prop Model Testing',divider="gray")
 st.header('Passing Yards')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_py_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_py_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
 #df_py = load_data('site_documents/nfl_data_website.xlsx', sheet_name=0)
-df_py = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=0)
+df_py = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=0)
 df_py =df_py.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal:
@@ -93,11 +93,11 @@ st.dataframe(df_py.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide_ind
 st.write('')
 st.header('Passing Attempts')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_pa_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_pa_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_pa = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=1)
+df_pa = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=1)
 df_pa =df_pa.dropna(subset='Season')
 
 
@@ -128,11 +128,11 @@ st.dataframe(df_pa.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide_ind
 st.write('')
 st.header('Passing TDs')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_ptd_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_ptd_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_ptd = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=3)
+df_ptd = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=3)
 df_ptd =df_ptd.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal4:
@@ -162,11 +162,11 @@ st.dataframe(df_ptd.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide_in
 st.write('')
 st.header('Passing INTs')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_int_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_int_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_int = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=4)
+df_int = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=4)
 df_int =df_int.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal4:
@@ -196,11 +196,11 @@ st.dataframe(df_int.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide_in
 st.write('')
 st.header('Rushing Yards')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_rush_yd_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_rush_yd_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_rush_yd = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=5)
+df_rush_yd = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=5)
 df_rush_yd =df_rush_yd.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal4:
@@ -230,11 +230,11 @@ st.dataframe(df_rush_yd.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hid
 st.write('')
 st.header('Receptions')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_rec_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_rec_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_rec = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=6)
+df_rec = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=6)
 df_rec =df_rec.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal4:
@@ -264,11 +264,11 @@ st.dataframe(df_rec.style.format({'Season': '{:.0f}','Week': '{:.0f}',}),hide_in
 st.write('')
 st.header('Receiving Yards')
 st.subheader('Model Performance Summary')
-st.image('site_images/nfl_prop_rec_yd_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nfl_prop_rec_yd_summary.PNG?raw=true')
 st.write('')
 
 st.subheader('All Test Datapoints')
-df_rec_yd = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=7)
+df_rec_yd = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=7)
 df_rec_yd =df_rec_yd.dropna(subset='Season')
 
 for column in columns_to_format_as_decimal4:
