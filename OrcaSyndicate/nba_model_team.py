@@ -15,7 +15,7 @@ Our NBA team models are our oldest ongoing implementation, and we continue to it
      '''
 st.write(nba_intro)  
 st.write('')
-st.image('site_images/nba_intro_1.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_intro_1.PNG?raw=true')
 nba_intro2 = '''
 We hoped that the switch to a regression model in 23/24 with two independent variables would allow for more robust simulations that would more accurately capture the full range of outcomes possible for each game.
  However, the algorithm’s prioritization of [RMSE minimization](https://arize.com/blog-course/root-mean-square-error-rmse-what-you-need-to-know/) reduced its prediction variance to a greater extent than anticipated. This had the effect of generally biasing the model toward large underdogs, as the model did not sufficiently discount the expected PpP from the inferior team or enhance it for the superior one.
@@ -42,7 +42,7 @@ The same process (with the home court advantage removed) is used to calculate ov
 st.write('')
 st.write(nba_intro3)   
 st.write('')
-st.image('site_images/nba_intro_2.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_intro_2.PNG?raw=true')
 st.header('NBA Model Testing',divider="gray",help="Games Used to Determine Betting Thresholds")
 st.subheader('Team-Level Model Spread Performance Summary')
 st.image('site_images/nba_team_spreads_summary.png')
