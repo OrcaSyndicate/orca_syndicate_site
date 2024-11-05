@@ -23,7 +23,7 @@ st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyn
 st.header('MLB Prop Model Testing',divider="gray")
 st.header('Total Bases')
 st.subheader('Model Performance Summary')
-st.image('site_images/mlb_prop_tb_summary.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/mlb_prop_tb_summary.PNG?raw=true')
 st.write('')
 
 @st.cache_data  # 👈 Add the caching decorator
@@ -32,7 +32,7 @@ def load_data(url,sheet_name):
     return df
 
 st.subheader('All Test Datapoints')
-df_tb = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_documents/mlb_prop_data_website.xlsx?raw=true', sheet_name=0)
+df_tb = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/mlb_prop_data_website.xlsx', sheet_name=0)
 df_tb['Date'] = pd.to_datetime(df_tb['Date']).dt.strftime('%m-%d-%Y')
 columns_to_format_as_decimal = ['Over Odds','Under Odds','Proj. AB','Proj. TB','BB Odds']
 for column in columns_to_format_as_decimal:
