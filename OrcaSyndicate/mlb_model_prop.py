@@ -10,7 +10,7 @@ Our MLB player props combine player-specific projections and success rates with 
    To account for the [significant randomness in baseball](https://blogs.fangraphs.com/is-baseball-the-least-random-sport/), as well for the relatively few datapoints per season for pitchers, these calculations are then regressed to league averages with a dynamic weighting system based on games played.  
 ''' 
 st.write(mlb_intro)  
-st.image('site_images/mlb_intro_1.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/mlb_intro_1.PNG?raw=true')
 st.write('')
 mlb_intro2 = '''
 Given the [Markovian](https://en.wikipedia.org/wiki/Markov_chain) and [zero-inflated](https://en.wikipedia.org/wiki/Zero-inflated_model) nature of many baseball stat items, converting these raw projections into probabilities for wagering purposes is particularly tricky here.
@@ -18,7 +18,7 @@ Given the [Markovian](https://en.wikipedia.org/wiki/Markov_chain) and [zero-infl
    Once these final probability estimates are generated, we compare them to the odds-implied probabilities in the same manner as with other models in order to identify plus-EV wagering opportunities. Given this model family was introduced this year, we currently only cover 4 markets, but hope to expand into additional ones in the years ahead.
 '''      
 st.write(mlb_intro2)  
-st.image('site_images/mlb_intro_2.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/mlb_intro_2.PNG?raw=true')
 
 st.header('MLB Prop Model Testing',divider="gray")
 st.header('Total Bases')
