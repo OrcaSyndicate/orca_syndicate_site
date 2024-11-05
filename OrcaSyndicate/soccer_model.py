@@ -25,7 +25,7 @@ st.write(soccer_intro2)
 st.write('')
 st.header('Soccer Model Testing',divider="gray")
 st.subheader('Asian Handicap Model Performance Summary')
-st.image('C:/Users/ajaku/Downloads/soccer_team_spreads_summary.png')
+st.image('site_images/soccer_team_spreads_summary.png')
 
 @st.cache_data  # 👈 Add the caching decorator
 def load_data(url,sheet_name):
@@ -34,7 +34,7 @@ def load_data(url,sheet_name):
 
 st.write('')
 st.subheader('All AH Model Datapoints')
-data_comb1 = load_data('C:/Users/ajaku/Downloads/soccer_data_website.xlsx', sheet_name=0)
+data_comb1 = load_data('site_documents/soccer_data_website.xlsx', sheet_name=0)
 data_comb1 = data_comb1.dropna(subset=['Home'])
 data_comb1['Date'] = pd.to_datetime(data_comb1['Date']).dt.strftime('%m-%d-%Y')
 
