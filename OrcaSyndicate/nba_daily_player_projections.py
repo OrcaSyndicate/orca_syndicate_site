@@ -11,7 +11,7 @@ if 'user_subscribed' not in st.session_state:
 st.markdown("###### _*Note that players must have played in at least 5 games this season in order to qualify for the tables._")
 
 st.header('Free Player Projections',divider="gray")
-data_comb1 = pd.read_excel('https://www.dropbox.com/scl/fi/qgdt7f611n9nl7yt7oxdp/NBA_Prop_Projections_Raw.xlsx?rlkey=gqnvhocov11naejwvqrdzlavs&st=yixto9mz&dl=1',usecols=list(range(0,17)))
+data_comb1 = pd.read_excel('https://www.dropbox.com/scl/fi/qgdt7f611n9nl7yt7oxdp/NBA_Prop_Projections_Raw1.xlsx?rlkey=gqnvhocov11naejwvqrdzlavs&st=u8oynrle&dl=1',usecols=list(range(0,17)))
 data_comb1 = data_comb1.dropna(subset=['player'])
 data_comb1['date'] = pd.to_datetime(data_comb1['date']).dt.strftime('%m-%d-%Y')
 data_comb11 =  data_comb1.rename(columns={'Final Min. Est.': 'minutes_est','Pts. Est.': 'pts_proj','RA Est.':'ra_proj'})
@@ -58,7 +58,7 @@ def display_login_status():
     if st.session_state['user_subscribed']==True:
     #if 'logged_in' in st.session_state and st.session_state['logged_in']:
         st.write('')
-        data_comb2 = pd.read_excel('https://www.dropbox.com/scl/fi/qgdt7f611n9nl7yt7oxdp/NBA_Prop_Projections_Raw.xlsx?rlkey=gqnvhocov11naejwvqrdzlavs&st=yixto9mz&dl=1',usecols=[0,1,2,18,19,20,21,22])
+        data_comb2 = pd.read_excel('https://www.dropbox.com/scl/fi/qgdt7f611n9nl7yt7oxdp/NBA_Prop_Projections_Raw1.xlsx?rlkey=gqnvhocov11naejwvqrdzlavs&st=u8oynrle&dl=1',usecols=[0,1,2,18,19,20,21,22])
         data_comb2 = data_comb2.dropna(subset=['player'])
         data_comb2['date'] = pd.to_datetime(data_comb2['date']).dt.strftime('%m-%d-%Y')
         #data_comb21 =  data_comb2.rename(columns={'Final Min. Est.': 'minutes_est','Pts. Est.': 'pts_proj','RA Est.':'ra_proj'})
