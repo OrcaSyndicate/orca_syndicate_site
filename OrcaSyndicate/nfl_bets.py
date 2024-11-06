@@ -12,17 +12,17 @@ st.set_page_config(layout="wide")
 if 'user_subscribed' not in st.session_state:
     st.session_state['user_subscribed'] = False
 
-data_comb_py = pd.read_csv('C:/Users/ajaku/Downloads/py_all_display.csv')
-data_comb_pa = pd.read_csv('C:/Users/ajaku/Downloads/pa_all_display.csv')
-data_comb_pc = pd.read_csv('C:/Users/ajaku/Downloads/pc_all_display.csv')
-data_comb_ptd = pd.read_csv('C:/Users/ajaku/Downloads/ptd_all_display.csv')
-data_comb_int = pd.read_csv('C:/Users/ajaku/Downloads/int_all_display.csv')
-data_comb_rec = pd.read_csv('C:/Users/ajaku/Downloads/rec_all_display.csv')
-data_comb_rec_yd = pd.read_csv('C:/Users/ajaku/Downloads/rec_yd_all_display.csv')
-data_comb_rush_yd = pd.read_csv('C:/Users/ajaku/Downloads/rush_yd_all_display.csv')
-data_comb_rec_rb = pd.read_csv('C:/Users/ajaku/Downloads/rec_rb_all_display.csv')
-data_comb_rec_yd_rb = pd.read_csv('C:/Users/ajaku/Downloads/rec_yd_rb_all_display.csv')
-data_comb_rr_yd = pd.read_csv('C:/Users/ajaku/Downloads/rr_all_display.csv')
+data_comb_py = pd.read_csv('https://www.dropbox.com/scl/fi/85w2yo2ha0vcka6iof5on/py_all_display.csv?rlkey=uck6k6lydxoz6cx3d1tnlcwjm&st=v2iybsjm&dl=1')
+data_comb_pa = pd.read_csv('https://www.dropbox.com/scl/fi/9nivxdo9r5ae1ki33tum9/pa_all_display.csv?rlkey=r40oo9xv2wib6gdqvtjg6e8kk&st=f2ix9ie4&dl=1')
+data_comb_pc = pd.read_csv('https://www.dropbox.com/scl/fi/pw11wpbkuq3s9ex8pdak1/pc_all_display.csv?rlkey=9nprjpg8m28e1rhduf2sql4j8&st=k20jzakg&dl=1')
+data_comb_ptd = pd.read_csv('https://www.dropbox.com/scl/fi/07onvtddqw2rlrixcdeh0/ptd_all_display.csv?rlkey=cxhi4k9db0gxz788rhu9vo5gy&st=61quf878&dl=1')
+data_comb_int = pd.read_csv('https://www.dropbox.com/scl/fi/06unto0qfaaccag5ra7w3/int_all_display.csv?rlkey=ab5jgverajq7g3vkvex137m6s&st=c9f8tnzi&dl=1')
+data_comb_rec = pd.read_csv('https://www.dropbox.com/scl/fi/t1of92qqnuvk4ckh3yfwa/rec_all_display.csv?rlkey=60rvggzuqgv02nmy2an0vy67v&st=qsc9dpdy&dl=1')
+data_comb_rec_yd = pd.read_csv('https://www.dropbox.com/scl/fi/xl0jino5k7mrb8juqd7jp/rec_yd_all_display.csv?rlkey=bol2b8sepbxly8s4bti04hytu&st=06s47wts&dl=1')
+data_comb_rush_yd = pd.read_csv('https://www.dropbox.com/scl/fi/gdpsfe9dj4e6r7gobxn5k/rush_yd_all_display.csv?rlkey=8oochgusx5iobj5lw4kmrp42k&st=y1dh3xsn&dl=1')
+data_comb_rec_rb = pd.read_csv('https://www.dropbox.com/scl/fi/0pz4j3xct6vffzhlxb67h/rec_rb_all_display.csv?rlkey=qyhpc8z4e69n6zpqktoygs2eg&st=jtec8hkn&dl=1')
+data_comb_rec_yd_rb = pd.read_csv('https://www.dropbox.com/scl/fi/zph7bdyg1n16lfnycu0ks/rec_yd_rb_all_display.csv?rlkey=yzm0dwjuut9gibd9sou2aqbhf&st=4u3rvfct&dl=1')
+data_comb_rr_yd = pd.read_csv('https://www.dropbox.com/scl/fi/4sdqr5aj7e5icuprfyn5g/rr_all_display.csv?rlkey=dylqiwr3czbddd71qcctdvxl8&st=g5xr8l5q&dl=1')
 
 dfs = [data_comb_rec, data_comb_rec_yd, data_comb_rush_yd, data_comb_rec_rb,data_comb_rec_yd_rb,data_comb_rr_yd]  # List of your dataframes
 new_column_names = {'week_y': 'Week','team': 'Team','position_group': 'Position','player_display_name': 'Player','market': 'Market','best over line': 'Best Over Line', 'best under line': 'Best Under Line'}  # Dictionary of column name changes
@@ -30,7 +30,7 @@ new_column_names = {'week_y': 'Week','team': 'Team','position_group': 'Position'
 for df in dfs:
     df.rename(columns=new_column_names, inplace=True)
 
-data_comb2 = pd.read_csv('C:/Users/ajaku/Downloads/all_qual_nfl_prop_display.csv')
+data_comb2 = pd.read_csv('https://www.dropbox.com/scl/fi/xv4k0xa8zzyv9ybrq98a0/all_qual_nfl_prop_display.csv?rlkey=y3lt6pyaft2csxvkb3cmavjfv&st=bz0zi6x7&dl=1')
 
 data_comb_py = data_comb_py.dropna(subset=['Player'])
 data_comb_py = data_comb_py[(data_comb_py['Best Over Line'] > 0)]
