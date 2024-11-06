@@ -16,18 +16,18 @@ st.header('NBA Player Prop Model Bets',divider="gray")
 #st.markdown("### _Currently in the offseason, check back later!_")
 st.markdown("### _Currently collecting data during the first few games of the season, check back later!_")
 
-data_comb_pts = pd.read_csv('C:/Users/ajaku/Downloads/pts_all_display.csv')
-data_comb_reb = pd.read_csv('C:/Users/ajaku/Downloads/reb_all_display.csv')
-data_comb_ast = pd.read_csv('C:/Users/ajaku/Downloads/ast_all_display.csv')
-data_comb_blk = pd.read_csv('C:/Users/ajaku/Downloads/blk_all_display.csv')
-data_comb_stl = pd.read_csv('C:/Users/ajaku/Downloads/stl_all_display.csv')
-data_comb_sb = pd.read_csv('C:/Users/ajaku/Downloads/sb_all_display.csv')
-data_comb_tpm = pd.read_csv('C:/Users/ajaku/Downloads/tpm_all_display.csv')
-data_comb_to = pd.read_csv('C:/Users/ajaku/Downloads/to_all_display.csv')
-data_comb_pra = pd.read_csv('C:/Users/ajaku/Downloads/pra_all_display.csv')
-data_comb_pr = pd.read_csv('C:/Users/ajaku/Downloads/pr_all_display.csv')
-data_comb_pa = pd.read_csv('C:/Users/ajaku/Downloads/pa_all_display.csv')
-data_comb_ra= pd.read_csv('C:/Users/ajaku/Downloads/ra_all_display.csv')
+data_comb_pts = pd.read_csv('https://www.dropbox.com/scl/fi/f4li33lrqog6y22nueiih/pts_all_display.csv?rlkey=gjvhwza956td1slgbdm04853t&st=wmadmwtn&dl=1')
+data_comb_reb = pd.read_csv('https://www.dropbox.com/scl/fi/70zndne09ajr3qt1wlamb/reb_all_display.csv?rlkey=nnjk7wxdzvn76bh3wfyd8euam&st=u53riq53&dl=1')
+data_comb_ast = pd.read_csv('https://www.dropbox.com/scl/fi/qzp83j5f4djrzlekc613x/ast_all_display.csv?rlkey=g46zjgs8gtdrb19k6n3i5itv7&st=hwnqakgv&dl=1')
+data_comb_blk = pd.read_csv('https://www.dropbox.com/scl/fi/uq41a40qapjebhuuuiqk8/blk_all_display.csv?rlkey=1741lubt2upwwpdoopnfjemia&st=p8tvcv8v&dl=1')
+data_comb_stl = pd.read_csv('https://www.dropbox.com/scl/fi/zah8pp18drlq9q46eulfr/stl_all_display.csv?rlkey=xlcylhg8do6p4yo17aoloeld7&st=p4nwjd06&dl=1')
+data_comb_sb = pd.read_csv('https://www.dropbox.com/scl/fi/kvqq8vwks7rd2935zanm0/sb_all_display.csv?rlkey=o1yjntuemy9st7yi2o2rculfk&st=lsla63u5&dl=1')
+data_comb_tpm = pd.read_csv('https://www.dropbox.com/scl/fi/cnyskvyevh19z9onvjw0i/tpm_all_display.csv?rlkey=90f9qje6tovp1kpum4m0g7myf&st=2ownuow5&dl=1')
+data_comb_to = pd.read_csv('https://www.dropbox.com/scl/fi/txk045l559bsdzk3c68qq/to_all_display.csv?rlkey=uvpj0ecl1qogtswrjbe11bx8q&st=2hi378nw&dl=1')
+data_comb_pra = pd.read_csv('https://www.dropbox.com/scl/fi/8e6s69pkhjt9fmvwkq5x1/pra_all_display.csv?rlkey=d2qku3np3iyziduzb31ifvlh8&st=308go46c&dl=1')
+data_comb_pr = pd.read_csv('https://www.dropbox.com/scl/fi/729rolvxd6jzpohzfushs/pr_all_display.csv?rlkey=gxhigdu86kqrixb3vziid2m2z&st=6ps003jh&dl=1')
+data_comb_pa = pd.read_csv('https://www.dropbox.com/scl/fi/306q81mpwr8d4meswvw95/nba_pa_all_display.csv?rlkey=nygdds1nygc5x1tjf9d1v4c16&st=in3nosu8&dl=1')
+data_comb_ra= pd.read_csv('https://www.dropbox.com/scl/fi/6tujveaiv70xkmpy9e9v1/ra_all_display.csv?rlkey=ctalorsuexvzd2wswka77gs0l&st=imk1qu3b&dl=1')
 
 dfs = [data_comb_pts, data_comb_reb, data_comb_ast, data_comb_tpm,data_comb_blk,data_comb_stl]  # List of your dataframes
 new_column_names = {}  # Dictionary of column name changes
@@ -35,7 +35,7 @@ new_column_names = {}  # Dictionary of column name changes
 for df in dfs:
     df.rename(columns=new_column_names, inplace=True)
 
-data_comb2 = pd.read_csv('C:/Users/ajaku/Downloads/all_qual_nba_prop_display.csv')
+data_comb2 = pd.read_csv('https://www.dropbox.com/scl/fi/ey9uvgx0nyop56shu07xs/all_qual_nba_prop_display.csv?rlkey=e687c6p5nqprmk79p4bmobfh2&st=t77ccdmf&dl=1')
 
 data_comb_pts = data_comb_pts.dropna(subset=['Player'])
 data_comb_pts = data_comb_pts[(data_comb_pts['Best Over Line'] > 0)]
@@ -277,4 +277,4 @@ st.dataframe(filtered_df.style.background_gradient(cmap="Greens", subset=['EV','
 #st.write('')
 #st.write('')
 #st.write('')
-#st.image('site_images/nba_prop_placeholder.png')
+#st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_prop_placeholder.png?raw=true')
