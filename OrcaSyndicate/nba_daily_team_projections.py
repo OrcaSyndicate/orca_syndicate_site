@@ -14,7 +14,7 @@ st.markdown("### _*Updated team model coming soon!_ :grin:")
 st.write('')
 
 st.header('Player Level Game Projections',divider="gray")
-data_comb1 = pd.read_excel('C:/Users/ajaku/Downloads/NBA_Prop_Projections_RAW.xlsx',usecols=list(range(28,45)))
+data_comb1 = pd.read_excel('https://www.dropbox.com/scl/fi/qgdt7f611n9nl7yt7oxdp/NBA_Prop_Projections_Raw.xlsx?rlkey=gqnvhocov11naejwvqrdzlavs&st=yixto9mz&dl=1',usecols=list(range(28,45)))
 data_comb1 = data_comb1.dropna(subset=['Home'])
 data_comb1['Date'] = pd.to_datetime(data_comb1['Date']).dt.strftime('%m-%d-%Y')
 #data_comb11 =  data_comb1.rename(columns={'Final Min. Est.': 'minutes_est','Pts. Est.': 'pts_proj','RA Est.':'ra_proj'})
