@@ -35,7 +35,7 @@ summaries[1].altair_chart(chart)
 st.write('')
 
 st.header('RB Projections',divider="gray")
-data_comb2 = pd.read_csv('C:/Users/ajaku/Downloads/rb_site_display.csv')
+data_comb2 = pd.read_csv('https://www.dropbox.com/scl/fi/lckobp2dn9atxaqpsxvv5/rb_site_display.csv?rlkey=5hu72p0l00j1gaxqb949gppke&st=w6evltza&dl=1')
 data_comb2 = data_comb2.dropna(subset=['Player'])
 columns_to_format_as_decimal1 =   ['Final Carries', 'Final YpC','Proj. Rush Yd', 'Proj. RB Receptions', 'Final YpR','Proj. RB Receiving Yds', 'Proj. RushTDs', 'Proj. RB RecTDs','ATTD Prob. %', 'Standard Fantasy Score', 'PPR Fantasy Score']
 for column in columns_to_format_as_decimal1:
@@ -51,7 +51,7 @@ st.dataframe(filtered_df2,hide_index=True)
 st.write('')
 
 st.header('WR & TE Projections',divider="gray")
-data_comb3 = pd.read_csv('C:/Users/ajaku/Downloads/wr_site_display.csv')
+data_comb3 = pd.read_csv('https://www.dropbox.com/scl/fi/3dweikg4kro81h9yp2xgk/wr_site_display.csv?rlkey=lfop00pqo20s0xeyosn1dgv3k&st=7pz5sbt1&dl=1')
 data_comb3 = data_comb3.dropna(subset=['Player'])
 columns_to_format_as_decimal2 = ['Proj. Receptions', 'Final YpC', 'Proj. Receiving Yards','Proj. RecTDs', 'ATTD Prob. %', 'Standard Fantasy Score','PPR Fantasy Score']
 columns_to_format_as_decimal3 = ['Target Share','Catch Rate']
@@ -71,7 +71,7 @@ st.dataframe(filtered_df3,hide_index=True)
 st.write('')
 
 st.header('Anytime TD Probabilities',divider="gray")
-data_comb4 = pd.read_csv('C:/Users/ajaku/Downloads/td_site_display.csv')
+data_comb4 = pd.read_csv('https://www.dropbox.com/scl/fi/dlvslk31yln54omwit3dt/td_site_display.csv?rlkey=em6tk9mahkd7c6ymng7sf42ae&st=hmd31fqp&dl=1')
 data_comb4a = data_comb4
 data_comb4 = data_comb4.dropna(subset=['Player'])
 data_comb4['ATTD Prob. %'] = data_comb4['ATTD Prob. %'].map('{:.2f}'.format)
