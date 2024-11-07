@@ -63,9 +63,9 @@ current_page = st.navigation({
     st.Page("nba_model_prop.py", title="Suggested Bets - Upcoming Games", icon=":material/sports_basketball:"),
     st.Page("nba_prop_bet_history.py", title="Suggested Bet Tracker", icon=":material/sports_basketball:"),
 ], 
-    "MLB - Player Prop Models": [
+    "MLB - Player Prop Models (Offseason)": [
     st.Page("mlb_model_prop.py", title="Model Intro & Test Data", icon=":material/sports_baseball:"),
-    st.Page("mlb_bets.py", title="Suggested Bets - Upcoming Games", icon=":material/sports_baseball:"),
+    #st.Page("mlb_bets.py", title="Suggested Bets - Upcoming Games", icon=":material/sports_baseball:"),
     st.Page("mlb_bet_history.py", title="Suggested Bet Tracker", icon=":material/sports_baseball:"),
 ],
  # "European Soccer": [ 
