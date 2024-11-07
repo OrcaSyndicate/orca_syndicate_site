@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 st.header('NFL Player Props - Suggested Bets History',divider="gray")
-df_nfl_result = pd.read_excel('site_documents/nfl_data_website.xlsx', sheet_name=8)
+df_nfl_result = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nfl_data_website.xlsx', sheet_name=8)
 df_nfl_result = df_nfl_result.dropna(subset='Market')
 
 columns_to_format_as_decimal2 = ['KC Exp. EV in Units','KC Unit Profit','Edge','EV','Final Odds','Sug. Units','KC Unit Result']  #,''
