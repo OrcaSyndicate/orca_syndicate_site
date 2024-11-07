@@ -13,7 +13,7 @@ st.write('')
 st.write('')
 st.write('')
 st.write('')
-st.image('site_images/nba_team_placeholder.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/nba_team_placeholder.png?raw=true')
 
 
 def display_login_status():
