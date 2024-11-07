@@ -268,9 +268,9 @@ def display_login_status():
         #st.dataframe(data_comb1.style.background_gradient(cmap="RdYlGn", subset=['EV','Edge']),hide_index=True) 
 
 display_login_status()  
-st.dataframe(styled_df_pts, hide_index=True)
-filtered_df=data_comb2
-st.dataframe(filtered_df.style.background_gradient(cmap="Greens", subset=['EV','Edge','Sug. Units']),hide_index=True) 
+#st.dataframe(styled_df_pts, hide_index=True)
+#filtered_df=data_comb2
+#st.dataframe(filtered_df.style.background_gradient(cmap="Greens", subset=['EV','Edge','Sug. Units']),hide_index=True) 
 
 #st.write('')
 #st.write('')
