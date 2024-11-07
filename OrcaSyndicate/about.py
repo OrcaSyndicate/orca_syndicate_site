@@ -28,11 +28,11 @@ Even those who don’t have the time and/or inclination to bet but enjoy data an
 #often essentially amount to a [confidence game](https://www.merriam-webster.com/dictionary/confidence%20game)
 st.write(intro)
 st.write('')
-image2 = st.image('site_images/home_page2.png')
+image2 = st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page2.PNG?raw=true')
 #summaries[0].image(image1)
 #summaries[1].image(image2)
 #st.write('')
-st.image('site_images/home_page4.png')
+st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page4.PNG?raw=true')
 #st.write('')
 
 st.write(intro2)
@@ -62,4 +62,4 @@ unsafe_allow_html=True)
 
 #add_auth(required=True, login_button_text="Login with Google")
 
-# st.image("C:/Users/ajaku/Downloads/logo.png")
+#st.image("https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/logo1.JPG?raw=true")
