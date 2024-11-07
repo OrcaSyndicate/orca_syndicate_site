@@ -14,9 +14,9 @@ def load_data(url,sheet_name):
 
 st.subheader('Performance Summary by Model & Market')
 
-df_nba_result1 = load_data('site_documents/nba_data_website.xlsx', sheet_name=14)
-df_nba_result2 = load_data('site_documents/nba_data_website.xlsx', sheet_name=15)
-df_nba_result3 = load_data('site_documents/nba_data_website.xlsx', sheet_name=16)
+df_nba_result1 = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=14)
+df_nba_result2 = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=15)
+df_nba_result3 = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=16)
 df_nba_result = pd.concat([df_nba_result1,df_nba_result2,df_nba_result3])
 
 df_nba_result = df_nba_result.dropna(subset='Model')
