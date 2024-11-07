@@ -10,7 +10,7 @@ def load_data(url,sheet_name):
     df = pd.read_excel(url,sheet_name)
     return df
 
-df_nba_result = load_data('shttps://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=10)
+df_nba_result = load_data('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/nba_data_website.xlsx', sheet_name=10)
 df_nba_result = df_nba_result.dropna(subset='Market')
 df_nba_result['Date'] = pd.to_datetime(df_nba_result['Date']).dt.strftime('%m-%d-%Y')
 columns_to_format_as_decimal2 = ['KC Exp. EV in Units','KC Unit Profit','Edge','EV','Final Odds','Sug. Units']  #,'KC Unit Result'
