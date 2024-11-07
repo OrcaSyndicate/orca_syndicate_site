@@ -114,7 +114,7 @@ div.stButton > button:first-child {
 div.stButton > button:hover {
     border: none;
     color: #000000;
-    background-color: #000000;
+    background-color: #FFFFFF;
 }
 </style>
 """, unsafe_allow_html=True)
