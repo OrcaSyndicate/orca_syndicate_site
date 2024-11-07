@@ -31,15 +31,15 @@ st.write('')
 #image2 = st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page2.PNG?raw=true')
 #summaries[0].image(image1)
 #summaries[1].image(image2)
-#st.write('')
+st.write('')
 st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page4.PNG?raw=true')
-#st.write('')
+st.write('')
 
 st.write(intro2)
 st.write('')
 
 st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page3.PNG?raw=true')
-
+st.write('')
 st.write(intro3)
 # st.markdown("#### The Orca Syndicate was created to combine advanced data analysis with scientific wagering principles to create successful sports betting systems. Since the legalization of sports betting in the United States in 2018, we have devoted a significant amount of time and effort into building advanced AI models that are capable of generating sustainable edges for betting purposes.")
 st.write('')
