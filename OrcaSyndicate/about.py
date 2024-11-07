@@ -31,7 +31,7 @@ st.write('')
 #image2 = st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page2.PNG?raw=true')
 #summaries[0].image(image1)
 #summaries[1].image(image2)
-st.write('')
+#st.write('')
 st.image('https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/home_page4.PNG?raw=true')
 st.write('')
 
