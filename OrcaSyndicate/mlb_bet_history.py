@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")
 st.header('MLB Player Prop Model - Suggested Bets History',divider="gray")
 
-df_mlb_result = pd.read_excel('site_documents/mlb_prop_data_website.xlsx', sheet_name=4)
+df_mlb_result = pd.read_excel('https://github.com/OrcaSyndicate/orca_syndicate_site/raw/refs/heads/main/OrcaSyndicate/site_documents/mlb_prop_data_website.xlsx', sheet_name=4)
 df_mlb_result = df_mlb_result.dropna(subset='Market')
 
 
