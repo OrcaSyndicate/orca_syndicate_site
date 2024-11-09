@@ -36,7 +36,9 @@ def custom_add_auth(**kwargs):
 #st.header('Scientific Sports Betting')
 # st.set_page_config(layout="wide")
 
-st.logo("https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/logo1_clear.png?raw=true",link='https://www.orcasyndicate.com/')
+#st.logo("https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/logo1_clear.png?raw=true",link='https://www.orcasyndicate.com/')
+st.logo("https://github.com/OrcaSyndicate/orca_syndicate_site/blob/main/OrcaSyndicate/site_images/logo1_clear.png?raw=true")
+
 
 current_page = st.navigation({ 
     "Home": [
