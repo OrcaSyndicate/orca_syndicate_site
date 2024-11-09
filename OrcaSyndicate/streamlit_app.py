@@ -84,7 +84,7 @@ current_page = st.navigation({
     st.Page("blog.py", title="Blog", icon=":material/edit_note:"),    
     st.Page("learning.py", title="Learning Algorithmic Sports Betting", icon=":material/school:"),
     st.Page("contact.py", title="Contact", icon=":material/contact_page:"),
-    st.Page("privacy_policy.py", title="Privacy Policy", icon=":material/spiral_note_pad:"),
+    st.Page("privacy_policy.py", title="Privacy Policy"),
     ],
 })
 
